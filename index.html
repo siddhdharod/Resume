@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Siddh Nirav Dharod - Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #1f1f1f, #292929);
+  color: #fdfdfd;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* Navbar */
+nav {
+  background: #141414;
+  padding: 15px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #ff8c0022;
+}
+
+nav a {
+  color: #ff8c00;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffb347;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #202020;
+  padding: 40px 20px;
+  border-bottom: 3px solid #ff8c0044;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #ffb347;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff8c00;
+  box-shadow: 0 0 15px #ff8c00aa;
+}
+
+/* Cards */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: rgba(25, 25, 25, 0.9);
+  backdrop-filter: blur(8px);
+  border: 2px solid #ff8c0022;
+  border-left: 5px solid #ff8c00;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 16px rgba(255, 140, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
+}
+
+.card h2 {
+  color: #ff8c00;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* List inside cards */
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+/* Language badges */
+.language-badges span {
+  background: #ff8c00;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+}
+
+/* Contact Card */
+.card.contact {
+  text-align: center;
+}
+
+.card.contact a {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Download Resume Button */
+.resume-btn {
+  display: inline-block;
+  background: #ff8c00;
+  color: #1f1f1f;
+  padding: 12px 26px;
+  margin: 20px auto 40px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #ffb347;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  background: #141414;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-top: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+ .download-btn-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff8c00, #ffb347);
+  color: #1f1f1f;
+  padding: 14px 30px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-btn:hover {
+  box-shadow: 0 8px 24px rgba(255, 140, 0, 0.6);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ff9c2a, #ffd580);
+  color: #000;
+}
+
+.resume-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+
+</style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#languages">Languages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="header-text">
+      <h1>Siddh Nirav Dharod</h1>
+      <p>Aspiring Software Engineer | Second Year Engineering Student | Thane, India</p>
+    </div>
+    <img src="siddh.jpg" alt="Siddh Nirav Dharod" class="profile-pic" />
+  </header>
+
+  <!-- Main content cards -->
+  <main class="container" id="resume">
+
+    <section class="card" id="about">
+      <h2>About Me</h2>
+      <p>Hi! I'm Siddh, a second-year Computer Engineering student. I enjoy creating digital experiences, whether through websites, games, or solving real-world problems. I believe in continuous learning and love taking part in challenges like hackathons.</p>
+    </section>
+
+    <section class="card" id="skills">
+      <h2>Software Skills</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>Java Programming</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+        <li>MS Office, Canva, Figma (Basic)</li>
+      </ul>
+    </section>
+
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>2D & 3D Games:</strong> Developed simple interactive games using web and Unity basics.</li>
+        <li><strong>Hackathon Prototype:</strong> Selected in the internal college hackathon. Built a smart campus navigation app with a team.</li>
+        <li><strong>Personal Portfolio Website:</strong> Built using HTML, CSS, and JS to showcase skills and projects.</li>
+        <li><strong>To-Do List App:</strong> A lightweight task app using JavaScript for daily task tracking.</li>
+        <li><strong>Calculator App:</strong> Functional UI calculator made with clean design and JavaScript logic.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in Computer Engineering</strong> – 2024–2028<br>Shah And Anchor Kutchii Engineering College, Mumbai</li>
+        <li><strong>HSC</strong> – 2022–2024<br>Pace Junior Science College, Thane</li>
+      </ul>
+    </section>
+
+    <section class="card" id="languages">
+      <h2>Languages</h2>
+      <div class="language-badges">
+        <span>English (Fluent)</span>
+        <span>Hindi (Fluent)</span>
+        <span>Marathi (Fluent)</span>
+        <span>Gujarati (Native)</span>
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+  <h2>Contact</h2>
+  <p>Phone: <a href="tel:+918879062991">+91 88790 62991</a></p>
+  <p>Email: <a href="mailto:siddh@example.com">siddh@example.com</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/siddhdharod" target="_blank" rel="noopener">linkedin.com/in/siddhdharod</a></p>
+  <p>GitHub: <a href="https://github.com/siddhdharod" target="_blank" rel="noopener">github.com/siddhdharod</a></p>
+</section>
+
+
+  </main>
+
+  <!-- Download PDF Button -->
+  <button class="download-btn" onclick="downloadResume()">Download Resume (PDF)</button>
+  <div class="download-btn-wrapper">
+  <a href="Siddh_Dharod_Resume.pdf" download class="resume-btn">
+    <span>📄 Download Resume (PDF)</span>
+  </a>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Siddh Nirav Dharod | Designed with ❤️
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function downloadResume() {
+      const element = document.getElementById('resume');
+      const opt = {
+        margin:       0.5,
+        filename:     'Siddh_Nirav_Dharod_Resume.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    }
+  </script>
+
+</body>
+</html>
